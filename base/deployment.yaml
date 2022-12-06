@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: demo-deployment
+  name: demo-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demo-deployment
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: demo-deployment
+    spec:
+      containers:
+      - image: polinchw/demo:dev-11
+        name: demo
+        resources: 
+          limits:
+            cpu: 100m
+            memory: 100Mi
+          requests:
+            cpu: 20m
+            memory: 50Mi
+            
