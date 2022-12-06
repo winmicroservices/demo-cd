@@ -2,18 +2,18 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: demo-deployment
+    app: demo-grallvm-deployment
   name: demo-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: demo-deployment
+      app: demo-grallvm-deployment
   strategy: {}
   template:
     metadata:
       labels:
-        app: demo-deployment
+        app: demo-grallvm-deployment
     spec:
       containers:
       - image: polinchw/demo:2.0.0
