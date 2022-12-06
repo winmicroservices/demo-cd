@@ -16,7 +16,7 @@ spec:
         app: demo-deployment
     spec:
       containers:
-      - image: polinchw/demo:dev-11
+      - image: polinchw/demo:1.0.0
         name: demo
         resources: 
           limits:
