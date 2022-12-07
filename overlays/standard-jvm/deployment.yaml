@@ -16,7 +16,7 @@ spec:
         app: demo-jvm-deployment
     spec:
       containers:
-      - image: polinchw/demo:1.0.0
+      - image: polinchw/demo:dev-11
         imagePullPolicy: Always
         name: demo
         resources: 
